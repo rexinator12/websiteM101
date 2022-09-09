@@ -1,0 +1,226 @@
+/* Background inspiriert von Code Grid */
+html,body{
+    background:#001a33;
+    font-family: 'Roboto Mono', serif;
+    background: linear-gradient(-45deg,#001a33,#b800e6,#004f99,#cc00ff,#0077e6,#d11aff);
+    animation: Gradient 15s ease infinite;
+    background-size: 400% 400%;
+    color: white;
+    margin: 0;
+    height: 100%;
+    
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*nav bar*/
+.dropdown {
+    margin: 0;
+    padding: 0;
+}
+.bar {
+    display: none;
+}
+nav{
+    justify-content: right;
+    background: #4d88ff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border-top: 50px;
+
+    
+
+}
+.logo{
+    padding: 5px 0 0 50px;
+    width: 320px;
+    height: 51px;
+
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 25px;
+
+}
+nav ul li{
+    background: #4d88ff;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background: #1a66ff;
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li{
+    position: relative;
+}
+/*Inhalt*/
+.inhalt{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 60px;
+    min-height: 100%;
+    margin-bottom: 174px;
+    text-align: center;
+}
+.text{
+    padding-top: 70px;
+}
+.img2{
+    
+    width: 600px;
+}
+/* Footer inspirierd von Learning Tutorial Point*/
+footer{
+    width: 100%;
+    background-color: #4d88ff;
+    padding: 15px 0px;
+    margin-top: auto;
+}
+.footer-social{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #004f99;
+}
+.footer-social ul li i:hover {
+    color: #b800e6;
+}
+.footer-social ul li a{
+    color: white;
+    font-size: 20px;
+}
+.footer-social ul li a i{
+    line-height: 50px;
+}
+.footer-social{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer-menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-menu ul li a{
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+.footer-menu ul li a:hover{
+    color: #004f99;
+}
+.footer-unten{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #004f99;
+    text-align: center;
+}
+footer, .inhalt::after {
+    height: 174px;
+}
+/*Responsiv code*/
+@media (max-width: 545px){
+    .nav ul li{
+        font-size: 15px;
+        
+    }
+    nav{
+        justify-content: right;
+        background: #4d88ff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        border-top: 100px;
+    
+    }
+}
+
+
+
+@media (max-width: 945px){
+    .dropdown{
+        margin-bottom: 120px;
+    }
+    .inhalt{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 40px;
+        
+    }
+
+    .text {
+        padding-top: 100px;
+        font-size: 30px;
+          
+
+    }
+    .img0{
+        width: 100%; }
+    nav{
+        justify-content: right;
+        background: #4d88ff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        border-top: 100px;
+        
+    }        
+    
+}
